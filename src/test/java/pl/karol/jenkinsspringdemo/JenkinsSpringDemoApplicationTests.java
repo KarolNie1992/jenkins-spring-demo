@@ -23,7 +23,7 @@ class JenkinsSpringDemoApplicationTests {
         this.mockMvc.perform(MockMvcRequestBuilders.get("/"))
                 .andDo(print())
                 .andExpect(status().isOk())
-                .andExpect(content().string("Ala ma kota"));
+                .andExpect(content().string("Jestem kotem"));
 
     }
 
